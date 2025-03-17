@@ -1961,9 +1961,26 @@ input[type="radio"] + label:before {
 		border-radius: 0;
 	}
 
-		.image.main img {
-			border-radius: 0;
-		}
+	image.avatar.full-gif {
+		border-radius: 0 !important;
+		overflow: visible !important;
+		width: auto !important;
+		height: auto !important;
+		display: block;
+		margin-top: 20px;
+  		margin-bottom: 20px;
+	  }
+	  
+	  .image.avatar.full-gif img {
+		position: static !important;
+		display: block;
+		margin: 0 auto;
+		width: auto !important;
+		height: auto !important;
+		object-fit: none !important;
+		margin-top: 20px;
+  		margin-bottom: 20px;
+	  }
 
 /* List */
 
@@ -3088,3 +3105,5 @@ input[type="button"],
 .features-list .feature .feature-details {
 	flex: 1;
 }
+
+
